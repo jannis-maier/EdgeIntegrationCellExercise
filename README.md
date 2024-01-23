@@ -15,13 +15,8 @@ There are no pre-requistes for this hands-on session. You can perform this even 
 Here is a mission that can help you getting started with SAP Integration Suite:
 - [Get Started with Integration Suite](https://discovery-center.cloud.sap/protected/index.html#/missiondetail/3258/3327/)
 
-## Read this first
-
-It needs to be pointed out that not all portions in today's lab can be performed as a hands-on exercise in the short allotted time. This is owing to the nature of complexity in presenting a 'hybrid' software. As you might have already guessed, installing a container orchestration engine like Kubernetes in an on-premise location from scratch based out of hosted providers like AKS or EKS can be quite daunting from a time, resource, cost, and operations perspective. 
-
-In terms of the software pre-requisites, Account setup, DNS management, etc. there are  hyperscaler, domain, IP, and network dependencies that go beyond SAP's ownership. 
-
-Unfortunately, we cannot have each one of you in the room today to perform a step-by-step installation. Nevertheless, to leave you a fulfilling experience, we have recorded a begin-to-finish video of the installation steps and annotated the timestamps so that you can follow along/play/pause with our step-by-step instructions.
+If you like to find out more about how to install and setup an Edge Integration Cell, check out the help documentation:
+- [Setting Up and Managing Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/setting-up-and-managing-edge-integration-cell)
 
 ## Exercises
 
@@ -29,9 +24,8 @@ In the following, the complete list of exercise steps are listed. Run through th
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Access and explore SAP Integration Suite](exercises/ex1/)
-- [Exercise 2 - Activate and deploy Edge Integration Cell](exercises/ex2/)
-- [Exercise 3 - Discover, design and run pre-built standard Integrations on Edge Integration Cell](exercises/ex3/)
-- [Exercise 4 - Design and manage an API on Edge Integration Cell](exercises/ex4/)
+- [Exercise 2 - Discover, design and run pre-built standard Integrations on Edge Integration Cell](exercises/ex3/)
+- [Exercise 3 - Design and manage an API on Edge Integration Cell](exercises/ex4/)
   
 
 ## Contributing
