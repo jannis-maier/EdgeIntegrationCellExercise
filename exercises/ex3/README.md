@@ -57,7 +57,7 @@ Click the listed package and navigate to the Package details view.
 
 <br>![](/exercises/ex3/images/changesenderaddress.png)
 
-14.  Navigate to the Receiver tab and change the following parameter values:
+14.  Switch to the Receiver tab and change the following parameter values:
 
 <br>In the "Address" field, copy and paste: 
 ```yaml 
@@ -74,27 +74,21 @@ Internet
 None
 ```
 
-After changing the values, click on "Save All"
+After changing the values, click on "Save"
 
-<br>![](/exercises/ex3/images/configureiflow.png)
+<br>![](/exercises/ex3/images/changereceiveraddress.png)
 
-16. Ignore teh popup with teh warnings, adn click deploy Toast message with confirming that configuration is saved will be shown. Click Cancel to close the Configure dialog.
-<br>![](/exercises/ex3/images/configuresaved.png)
+15. Ignore the popup with the warnings, and click "Deploy".
 
-14.	Click the integration flow "Replicate Order from SAP Order Management Foundation to SAP S4HANA" and navigate to the Artifact Editor view.
-<br>![](/exercises/ex3/images/15.png)
+<br>![](/exercises/ex3/images/configureanddeploy.png)
 
-15.	Look at the Artifact and validate whether required configurations are in place.
-<br>![](/exercises/ex3/images/16.png)
+16.	In the upcoming dialog, select the Runtime Profile as "Edge Integration Cell" from the drop-down, since we want to deploy this integration flow to this runtime. And click Yes.
 
-16.	Click Deploy
-<br>![](/exercises/ex3/images/deployclick.png)
+<br>![](/exercises/ex3/images/deployonedge.png)
 
-17.	Select the Runtime Profile as "Edge Integration Cell" from the drop-down, since we want to deploy this integration flow to this runtime. And click Yes.
-<br>![](/exercises/ex3/images/deploy.png)
+17.	Click Ok on the Deployment confirmation dialog. 
 
-18.	Click Ok on the Deployment dialog. 
-<br>![](/exercises/ex3/images/21.png)
+<br>![](/exercises/ex3/images/confirmdeployment.png)
 
 19.	Once the deployment is successful, a confirmation message will be shown
 <br>![](/exercises/ex3/images/deployedsuccess.png)
