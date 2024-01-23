@@ -72,7 +72,7 @@ You can use **Monetize** to define rate plans for the API Products that you buil
 <br>![](/exercises/ex1/images/Monetize.jpg)<br><br><br>
 
 
-If you have Tenant Admin role assigned, you will be able to access **Settings**. Here you can configure settings which are applicable for the entire tenant like managing runtime profiles, configuring transport management, setting up API Management, customization of MIGs & MAGs, etc.
+If you have Tenant Admin role assigned, you will be able to access **Settings**. Here you can configure settings which are applicable for the entire tenant like managing runtime profiles, configuring transport management, setting up API Management, customization of Message Implementation Guidelines (MIGs) & Mapping Guidelines (MAGs) for B2B communication, etc.
 
 <br>![](/exercises/ex1/images/Settings-Integrations.jpg)<br><br><br>
 
