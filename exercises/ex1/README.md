@@ -7,11 +7,11 @@ In this exercise, you will
 
 ## Access SAP Integration Suite tenant
 
-For running through the exercise steps, you will need access to SAP Integration Suite tenant. Please pick one of these SAP Integration Suite tenant as per the assignment . You will also get the credentials to log in to these tenants from the instructors.
+For running through the exercise steps, you will need access to an SAP Integration Suite tenant with an Edge Integration Cell runtime connected to.
 
-1. Please use this **SAP Integration Suite tenant** for your exercises
+1. Please use this [**SAP Integration Suite tenant**](https://cpisuite-europe-03.integrationsuite.cfapps.eu20-001.hana.ondemand.com/shell/home) for your exercises
 
-2. Use the **username** and **password** shared by the instructors to login to the tenant assigned to you
+2. Use the **username** and **password** shared by the instructors to login to the tenant
 
 3. For Exercise 3 and Exercise 4, please use these Service Instance credentials
    
