@@ -1,47 +1,59 @@
 # Exercise 2 - Discover, design and run pre-built standard integration on Edge Integration Cell
 
-In the previous exercise, you have familiarized yourself with the SAP Integration Suite capabilities and navigation. Now let's look at how we can discover, design and run pre-built standard integrations on Edge Integration Cell. In this exercise, we will use a pre-built standard content to connect to SAP S/4HANA backend system, trigger execution of the content deployed on Edge Integration Cell and perform operations like update of the S/4HANA data objects.
+In the previous exercise, you have familiarized yourself with the SAP Integration Suite capabilities and navigation. Now let's look at how we can discover, design and run pre-built standard integrations on Edge Integration Cell. In this exercise, we will use a pre-built standard content to connect to an SAP S/4HANA backend system, trigger execution of the content deployed on Edge Integration Cell and perform operations like update of the S/4HANA data objects.
 
 ### Note
 
-For all the subsequent steps in this exercise, please replace the XX in userXX with your respective id e.g user99
+For all the subsequent steps in this exercise, please replace the **XX** in **userXX** with your respective id e.g user99.
 
 ##  Description
 
-After completing these steps you will have deployed a standard integration on Edge Integration Cell and successfully executed it with on-premise SAP S/4HANA system.
+After completing these steps, you will have deployed a standard integration on Edge Integration Cell and successfully executed it with the on-premise SAP S/4HANA system.
 
 1. Navigate back to Home. In the Home page navigate to Capabilities and click on "Discover Integrations" under Build Integration Scenarios tile.
+
 <br>![](/exercises/ex3/images/image.png)
 
-2.  In the "Discover (Integrations)" view, navigate to the Search text box and enter the following package name: "SAP Order Management Foundation Integration with SAP S/4HANA" and click Enter. From the list of results, click on listed package "SAP Order Management Foundation Integration with SAP S/4HANA" 
+2.  In the "Discover (Integrations)" view, navigate to the Search text box and enter the following package name, then click Enter:
+
+```yaml 
+SAP Order Management Foundation Integration with SAP S/4HANA
+```
+
+3. From the list of results, click on the listed package "SAP Order Management Foundation Integration with SAP S/4HANA".
+
 <br>![](/exercises/ex3/images/package%20search.png)
 
-3.  In the package detail view, click on Copy button placed at top-right corner of the detail view
+4.  In the package detail view, click on Copy button placed at top-right corner of the detail view.
+
 <br>![](/exercises/ex3/images/4.png)
 
-4.  In the Messages pop-up, click on "Create copy" to create a named copy.
+5.  In the Messages pop-up, click on "Create copy" to create a named copy.
+
 <br>![](/exercises/ex3/images/5.png)
 
-5.  In the Provide suffix pop-up, enter the username that was provided to you. Clear the existing text which is shown as "14.10.2023.14.5.49" and enter username e.g. userXX and Click OK.
+6.  In the Provide suffix pop-up, enter the username that was provided to you. Clear the existing text which is shown as timestamp and enter username **userXX** with **XX** the number assigned to you, and Click OK.
+
 <br>![](/exercises/ex3/images/6.png)
 
-6.  Upon confirmation, a toast message "Package copied" will be shown. Click Close in the messages pop-up 
+8.  Upon confirmation, a toast message "Package copied" will be shown. Click Close in the messages pop-up.
+
 <br>![](/exercises/ex3/images/7.png)
 
-7.  Click Design from the sub navigation item in the left pane and click on "Integrations and APIs" and search the copied package (see the next step).
+9.  Click Design from the sub navigation item in the left pane and click on "Integrations and APIs" and search the copied package (see the next step).
+
 <br>![](/exercises/ex3/images/8.png)
 
-8.  In the search box, type userXX which you used as suffix during package copy operation. Package name with suffix as ".userXX" be listed e.g. "SAP Order Management Foundation Integration with SAP S/4HANA.user130". 
+10.  In the search box, type **userXX** which you used as suffix during package copy operation. Package name with suffix as ".userXX" be listed e.g. "SAP Order Management Foundation Integration with SAP S/4HANA.user130". 
 Click the listed package and navigate to the Package details view.
+
 <br>![](/exercises/ex3/images/9.png)
 
-9.  Click on Artifacts tab, and select the check box for the following artifact "Replicate Order from SAP Order Management Foundation to SAP S4HANA"
-<br>![](/exercises/ex3/images/10.png)
+12.  Click on Artifacts tab and click the Configure entry from the Actions menu of the "Replicate Order from SAP Order Management Foundation to SAP S4HANA" integration flow.
 
-10.  Click on Actions, and click Configure from the sub menu item
-<br>![](/exercises/ex3/images/11.png)
+<br>![](/exercises/ex3/images/10a.png)
 
-11.  In the "Configure Selected Artifacts" dialog, and change the following parameter under Sender tab under Connection section. Suffix the address with the "_userXX" this is the same user provided to you by the instructors.
+14.  In the "Configure Selected Artifacts" dialog, change the following parameter under Sender tab under Connection section. Suffix the address with the **_userXX** assigned to you.
 
 <br>Address: 
 ```yaml
@@ -49,7 +61,7 @@ Click the listed package and navigate to the Package details view.
 ```
 <br>![](/exercises/ex3/images/changesenderaddress.png)
 
-12.  Navigate to the Receiver tab and change the following parameter values:
+15.  Navigate to the Receiver tab and change the following parameter values:
 
 <br>In the "Address" field, copy and paste: 
 ```yaml 
@@ -67,9 +79,10 @@ None
 ```
 
 After changing the values, click on "Save All"
+
 <br>![](/exercises/ex3/images/configureiflow.png)
 
-13.  Toast message with confirming that configuration is saved will be shown. Click Cancel to close the Configure dialog.
+16.  Toast message with confirming that configuration is saved will be shown. Click Cancel to close the Configure dialog.
 <br>![](/exercises/ex3/images/configuresaved.png)
 
 14.	Click the integration flow "Replicate Order from SAP Order Management Foundation to SAP S4HANA" and navigate to the Artifact Editor view.
