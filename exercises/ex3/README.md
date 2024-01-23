@@ -53,15 +53,11 @@ Click the listed package and navigate to the Package details view.
 
 <br>![](/exercises/ex3/images/10a.png)
 
-14.  In the "Configure Selected Artifacts" dialog, change the following parameter under Sender tab under Connection section. Suffix the address with the **_userXX** assigned to you.
+13.  In the "Configure Selected Artifacts" dialog, change the following parameter under Sender tab under Connection section. Suffix the Address with the **userXX** assigned to you: **/s4onpremise/order_userXX**.
 
-<br>Address: 
-```yaml
-/s4onpremise/order_userXX
-```
 <br>![](/exercises/ex3/images/changesenderaddress.png)
 
-15.  Navigate to the Receiver tab and change the following parameter values:
+14.  Navigate to the Receiver tab and change the following parameter values:
 
 <br>In the "Address" field, copy and paste: 
 ```yaml 
@@ -82,7 +78,7 @@ After changing the values, click on "Save All"
 
 <br>![](/exercises/ex3/images/configureiflow.png)
 
-16.  Toast message with confirming that configuration is saved will be shown. Click Cancel to close the Configure dialog.
+16. Ignore teh popup with teh warnings, adn click deploy Toast message with confirming that configuration is saved will be shown. Click Cancel to close the Configure dialog.
 <br>![](/exercises/ex3/images/configuresaved.png)
 
 14.	Click the integration flow "Replicate Order from SAP Order Management Foundation to SAP S4HANA" and navigate to the Artifact Editor view.
