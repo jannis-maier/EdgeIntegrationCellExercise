@@ -86,4 +86,4 @@ Under **Settings - Runtime**, you will be able to activate or deactivate "Edge I
 
 You now have access to an SAP Integration Suite tenant and have explored the tooling and different navigation aspects.
 
-Continue to - [Exercise 2 - Activate and deploy Edge Integration Cell](../ex2/README.md)
+Continue to - [Exercise 2 - Discover, design and run pre-built standard integration on Edge Integration Cell](../ex3/README.md)
