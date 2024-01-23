@@ -79,6 +79,8 @@ If you have Tenant Admin role assigned, you will be able to access **Settings**.
 
 Under **Settings - Runtime**, you will be able to activate or deactivate "Edge Integration Cell" and for this you need to have "Integration_Provisioner" role assigned to your user. Once "Edge Integration Cell" is activated, you will get a URL to navigate to "Edge Lifecycle Management", which is required to setup and deploy Edge Integration Cell to your kubernetes cluster. To access "Edge Lifecycle Management", you will need "EdgeLMAccess" role.
 
+**Note**: you may not see the Runtime node in the provided tenant due to missing role assignment.
+
 <br>![](/exercises/ex1/images/Settings-Runtime.jpg)<br><br><br>
 
 
