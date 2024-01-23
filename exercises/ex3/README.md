@@ -296,7 +296,7 @@ e507568e-892c-443f-a6ba-4d53f76fecac$wS5Kq2nV25PlNT-U8bh8Yd-HGoBZpO-XW7Za9X3URE0
 
 33. Switch back to the Integration Suite UI, and navigate to the monitoring overview page.
 
-<br>![](/exercises/ex3/images/navigatetomonitorview.png)
+<br>![](/exercises/ex3/images/navigatebacktooverview.png)
 
 34. Navigate to tile "All Artifacts" under "Monitor Message Processing"
 
