@@ -19,7 +19,7 @@ Key highlights:
 
 ## What is Edge Integration Cell and how does it enable Hybrid Integrations?
 
-“Edge Integration Cell” is the new hybrid integration runtime, offered as an optional extension to SAP Integration Suite, enabling customers to run their API-led integration scenarios within customer-managed private landscapes. 
+**Edge Integration Cell** is the new hybrid integration runtime, offered as an optional extension to SAP Integration Suite, enabling customers to run their API-led integration scenarios within customer-managed private landscapes. 
 
 Key Highlights:
 - Flexible deployment option in customer´s kubernetes environments e.g. Azure AKS, Amazon EKS and SUSE Rancher 
@@ -27,7 +27,7 @@ Key Highlights:
 - Route business events from SAP applications to  event brokers
 - Configure and manage multiple Edge Integration Cells with an SAP Integration Suite cloud tenant
 - Business continuity during temporary connectivity loss (up to 4 hrs)
-- Migration path for PI/PO customers 
+- Migration path for SAP Process Integration / SAP Process Orchestration customers 
 
 <br>![](/exercises/ex0/images/EIC.jpg)
 
