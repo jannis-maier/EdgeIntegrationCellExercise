@@ -64,9 +64,9 @@ Click the listed package and navigate to the Package details view.
 https://proxyavrdev.hana.ondemand.com/Proxy/jenkslave55.cpi.c.eu-de-1.cloud.sap/9912/sap/bc/srt/scs_ext/sap/salesorderbulkrequest_in
 ```
 
-<br> In the "Proxy Type" field choose **Internet** from the drop down menu.
+<br> In the "Proxy Type" field choose **Internet** from the drop down menu,
 
-<br> and for "Authentication", choose **None** from the drop down menu.
+and for "Authentication", choose **None** from the drop down menu.
 
 After changing the values, click on "Save"
 
