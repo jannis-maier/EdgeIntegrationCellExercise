@@ -4,11 +4,9 @@ In the concluding section of the tutorial, we will be focusing on the creation o
 
 ### Note
 
-For all the subsequent steps in this exercise, please replace the xx in userxx with your respective id e.g user99
+For all the subsequent steps in this exercise, please replace the xx in userxx with your respective id, e.g user99
 
 ### Exercise steps
-
-***
 
 1. Navigate to the sub-navigation item - "Integrations and APIs" under the Design tab on the left side pane and click on "Create" to create a package
 
@@ -18,28 +16,28 @@ For all the subsequent steps in this exercise, please replace the xx in userxx w
 
 ![](/exercises/ex4/images/04_02_0010.png)
 
-3. Navigate to the Artifacts tab and add an API
+3. Switch to the Artifacts tab and add an API.
 
 ![](/exercises/ex4/images/04_03_0010.png)
 
-4. For the purpose of this exercise, we would be selecting the URL option
+4. For the purpose of this exercise, we would be selecting the URL option.
 
 ![](/exercises/ex4/images/04_04_0010.png)
 
-5. Fill in the details for the API
+5. Fill in the details for the API.
 
 | Field | Value |
 | ----- | ----- |
-| Name | Teched2023 API Artifact userxx |
+| Name | API Artifact userxx |
 | URL | https://proxyavrdev.hana.ondemand.com/Proxy/jenkslave55.cpi.c.eu-de-1.cloud.sap/9912/sap/bc/srt/scs_ext/sap/salesorderbulkrequest_in |
 | API Base Path | /apiuserxx |
 | API State (select from dropdown) | Active |
 | API Version | 1.0.0 |
-| Runtime Profile (select from dropdown) | Edge Integration Cell - sap-teched-node |
+| Runtime Profile (select from dropdown) | Edge Integration Cell |
 
 ![](/exercises/ex4/images/04_05_0010.png)
 
-6. Post the successful creation of the API, navigate into the "Overview" tab to confirm if the details are correct
+6. Post the successful creation of the API, navigate into the "Overview" tab to confirm if the details are correct.
 
 ![](/exercises/ex4/images/04_06_0010.png)
 
@@ -47,45 +45,47 @@ For all the subsequent steps in this exercise, please replace the xx in userxx w
 
 ![](/exercises/ex4/images/04_07_01_0010.png)
 
-8. Double click on the authentication policy and navigate to the property sheet at the bottom. By default "Basic" is not enabled and for this exercise, you should enable the Basic checkbox from the multi-select drop-down and click on Save
+8. Double click on the Authentication policy and navigate to the property sheet at the bottom. By default "Basic" is not enabled and for this exercise, you should enable the Basic checkbox from the multi-select drop-down and click on Save.
 
 ![](/exercises/ex4/images/04_07_02_0010.png)
 
-9. Click on the Authentication policy and you should see a pop-up with a set of actions. Click on the "+" icon
+9. Click on the Authentication policy and you should see a pop-up with a set of actions. Click on the "+" icon and select the **Surge Protection** policy from the drop-down to add the policy to your API.
 
 ![](/exercises/ex4/images/04_08_0010.png)
 
-10. Select the surge protection policy from the drop-down and add the Surge protection policy. The policy protects the target endpoint from a sudden spike in incoming requests. Navigate to the highlighted section below in the property sheet of the policy and fill in the details as shown in the UI. We are effectively configuring the policy to allow only 5 calls in a span of 10 seconds
+10. The policy protects the target endpoint from a sudden spike in incoming requests. Navigate to the highlighted section below in the property sheet of the policy and fill in the details as shown in the UI. We are effectively configuring the policy to allow only **5** calls in a span of **10** seconds.
 
 ![](/exercises/ex4/images/04_09_0010.png)
 
-11. Click on Request Reply and when the pop-up opens, click on the "+" icon. Select "XML to JSON Converter" from the drop-down. Configure the step in accordance with the highlighted section shown in the UI and click on Save
+11. Click on **Request Reply** and when the pop-up opens, click on the "+" icon. Select **XML to JSON Converter** from the drop-down.
 
 ![](/exercises/ex4/images/04_10_01_0010.png)
 
+12. Configure the step in accordance with the highlighted section shown in the UI and click on Save.
+
 ![](/exercises/ex4/images/04_10_02_0010.png)
 
-12. Now we are ready to deploy the API on Edge. Click on "..." icon on the top right corner and from the dropdown select "Deploy". During creation we had already configured the runtime profile and the hence this would deploy the API to the configured edge runtime profile
+13. Now we are ready to deploy the API on Edge. Click on "..." icon on the top right corner and from the dropdown select "Deploy". During creation we had already configured the runtime profile and the hence this would deploy the API to the configured edge runtime profile.
 
 ![](/exercises/ex4/images/04_11_0010.png)
 
-13. Post a successful deployment , the status field for the API should change from "Not deployed" to the corresponding state. In the UI, the highlighted section shows that the API is successfully deployed and is ready for execution
+14. Post a successful deployment , the status field for the API should change from "Not deployed" to the corresponding state. In the UI, the highlighted section shows that the API is successfully deployed and is ready for execution.
 
 ![](/exercises/ex4/images/04_12_0010.png)
 
-14. Navigate out of the edit view by selecting "Cancel" from the dropdown as shown
+15. Navigate out of the edit view by selecting "Cancel" from the dropdown as shown.
 
 ![](/exercises/ex4/images/04_13_0010.png)
 
-15. Now we would navigate to the monitoring shell navigation item on the left and select "Integrations and API". Post the selection , we would select the edge runtime profile from the dropdown.
+15. Now we would navigate to the monitoring shell navigation item on the left and select "Integrations and API". Post the selection, we would select the edge runtime profile from the dropdown.
 
 ![](/exercises/ex4/images/04_14_0010.png)
 
-16. Under the Manage Integration Content section , click on the highlighted tile to navigate to the list view of all the deployed artifacts
+16. Under the Manage Integration Content section , click on the highlighted tile to navigate to the list view of all the deployed artifacts.
 
 ![](/exercises/ex4/images/04_15_0010.png)
 
-17. Select the artifact "Teched2023 API Artifact userxx" and you should see the endpoint which would be used to access the API. Click on the highlighted icon and this copy the deployed url to the clipboard. From the dropdown below , change the log level to "Debug" as shown below. Confirm the change on the dialog box which appears post the log level is changed from the dropdown.
+17. Select the artifact "API Artifact userxx" and you should see the endpoint which would be used to access the API. Click on the highlighted icon and copy the deployed url to the clipboard.
 
 <br>![](/exercises/ex4/images/04_16_0010.png)
 <br>![](/exercises/ex4/images/04_17_0010.png)
