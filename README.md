@@ -20,12 +20,13 @@ If you like to find out more about how to install and setup an Edge Integration 
 
 ## Exercises
 
-In the following, the complete list of exercise steps are listed. Run through them in the given order. You can use this section as an index or table of contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents.
+In the following, the complete list of exercise steps are listed. Run through them in the given order. You can use this section as an index or table of contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents. If you are familiar with the architecture of SAP Integration Suite with its new Edge Integration Cell runtime and the SAP Integration Suite capabilities, you may skip the Getting Started chapter as well as Exercise 2, hence they are labeled as optional.
 
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - Access and explore SAP Integration Suite](exercises/ex1/)
-- [Exercise 2 - Discover, design and run pre-built standard Integrations on Edge Integration Cell](exercises/ex3/)
-- [Exercise 3 - Design and manage an API on Edge Integration Cell](exercises/ex4/)
+- [Getting Started - High level hybrid architecture (optional)](exercises/ex0/)
+- [Exercise 1 - Access SAP Integration Suite](exercises/ex1/)
+- [Exercise 2 - Explore SAP Integration Suite (optional)](exercises/ex2/)
+- [Exercise 3 - Discover, design and run pre-built standard Integrations on Edge Integration Cell](exercises/ex3/)
+- [Exercise 4 - Design and manage an API on Edge Integration Cell](exercises/ex4/)
   
 
 ## Contributing
