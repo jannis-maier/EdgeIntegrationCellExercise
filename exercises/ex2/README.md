@@ -1,5 +1,5 @@
 
-# Exercise 2 - Explore SAP Integration Suite
+# Exercise 2 - Explore SAP Integration Suite (optional)
 
 In this exercise, you will get introduced to different capabilities and explore navigation across different aspects of SAP Interation Suite tooling. This exercise is optional, if you are already familiar with the SAP Integration Suite capabilities, you can skip this chapter and proceed to the next exercise.  
 
