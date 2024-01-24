@@ -1,4 +1,4 @@
-# Exercise 3 - Design and run an API on Edge Integration Cell
+# Exercise 4 - Design and run an API on Edge Integration Cell
 
 In the concluding section of the tutorial, we will be focusing on the creation of an API, which serves as a consolidated entity enabling developers to incorporate both policies and steps. For this exercise, we will generate an API that directs to the same SAP S/4HANA REST endpoint URL employed in the prior exercise. Additionally, we will enhance its functionality by integrating traffic management features like Surge Protection and mediation capabilities such as the XML to JSON converter.
 
