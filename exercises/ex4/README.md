@@ -24,16 +24,23 @@ For all the subsequent steps in this exercise, please replace the xx in userxx w
 
 ![](/exercises/ex4/images/04_04_0010.png)
 
-5. Fill in the details for the API.
+5. Fill in the details for the API as follows, then select "Create".
 
-| Field | Value |
-| ----- | ----- |
-| Name | API Artifact userxx |
-| URL | https://proxyavrdev.hana.ondemand.com/Proxy/jenkslave55.cpi.c.eu-de-1.cloud.sap/9912/sap/bc/srt/scs_ext/sap/salesorderbulkrequest_in |
-| API Base Path | /apiuserxx |
-| API State (select from dropdown) | Active |
-| API Version | 1.0.0 |
-| Runtime Profile (select from dropdown) | Edge Integration Cell |
+Name: **API Artifact userxx** with xx the id assigned to you
+
+URL:
+```yaml 
+https://proxyavrdev.hana.ondemand.com/Proxy/jenkslave55.cpi.c.eu-de-1.cloud.sap/9912/sap/bc/srt/scs_ext/sap/salesorderbulkrequest_in
+```
+
+API Base Path: **/apiuserxx** with xx the id assigned to you
+
+API State (select from dropdown): **Active**
+
+API Version: **1.0.0**
+
+Runtime Profile (select from dropdown): **Edge Integration Cell**
+
 
 ![](/exercises/ex4/images/04_05_0010.png)
 
@@ -77,52 +84,51 @@ For all the subsequent steps in this exercise, please replace the xx in userxx w
 
 ![](/exercises/ex4/images/04_13_0010.png)
 
-15. Now we would navigate to the monitoring shell navigation item on the left and select "Integrations and API". Post the selection, we would select the edge runtime profile from the dropdown.
+15. Now we would navigate to the monitoring shell navigation item on the left and select "Integrations and APIs". Post the selection, we would select the edge runtime profile from the dropdown.
 
 ![](/exercises/ex4/images/04_14_0010.png)
 
-16. Under the Manage Integration Content section , click on the highlighted tile to navigate to the list view of all the deployed artifacts.
+16. Under the Manage Integration Content section, click on the highlighted tile to navigate to the list view of all the deployed artifacts.
 
 ![](/exercises/ex4/images/04_15_0010.png)
 
 17. Select the artifact "API Artifact userxx" and you should see the endpoint which would be used to access the API. Click on the highlighted icon and copy the deployed url to the clipboard.
 
 <br>![](/exercises/ex4/images/04_16_0010.png)
-<br>![](/exercises/ex4/images/04_17_0010.png)
-<br>![](/exercises/ex4/images/04_18_0010.png)
 
-18. Now that we have successfully deployed the API , it is time to test the API. Create a new request in the insomnia client in a similar fashion as mentioned in the [previous exercise](../ex3/README.md). In the url section , paste the url which was already copied to clipboard as part of the previous step.For the request , we would be using the credentials as shown below in the table
+18. Now that we have successfully deployed the API, it is time to test the API. Create a new request in the Insomnia client in a similar fashion as mentioned in the [previous exercise](../ex3/README.md). This time, select GET as operation. In the url section, paste the url which was already copied to clipboard as part of the previous step. For the request, we would be using the credentials as shown below in the table
 <br>
 
-| Field | Value |
-| ----- | ----- |
-| USERNAME | sb\-93d61073\-f8ba\-4faa\-98e0\-89fd3a424277\!b2246\|it\-rt\-iat\-prism\-std\!b144 |
-| PASSWORD | 174ebb0d-4e0f-43dd-994a-58629ec524bf$mPrfigEVYsOs71X2jfWBkBB7e24Mi8M94xkCuREs1Yo= |
+USERNAME:
+```yaml 
+sb-3009327f-3dc1-4e3e-9853-5bd7c23e221d!b44358|it-rt-cpisuite-europe-03!b18631
+```
+
+PASSWORD:
+```yaml 
+e507568e-892c-443f-a6ba-4d53f76fecac$wS5Kq2nV25PlNT-U8bh8Yd-HGoBZpO-XW7Za9X3URE0=
+```
 
 ![](/exercises/ex4/images/04_19_0010.png)
 
-19. Post a successful request, we would try to simulate the scenario, where we violate the criteria for surge protection policy. Execute the request on the insomnia client by clicking on the "Send" button repeatedly such that we end up executing more than 5 requests in a span of 10 seconds. Ideally, on making the 6th request, the surge protection policy should get triggered and you should see a response as shown in the UI. 
+19. Post a successful request, we would try to simulate the scenario, where we violate the criteria for surge protection policy. Execute the request on the Insomnia client by clicking on the "Send" button repeatedly such that we end up executing more than 5 requests in a span of 10 seconds. Ideally, on making the 6th request, the surge protection policy should get triggered and you should see a response as shown in the UI. 
 
 ![](/exercises/ex4/images/04_20_0010.png)
 
-20. Now , we would navigate back to the monitoring UI to visualize the execution flow. Click on Monitor Message Processing link as shown in the UI for the artifact artifact "Teched2023 API Artifact userxx" and this should show all the executions of the API with the latest execution appearing right at the top
+20. Now , we would navigate back to the monitoring UI to visualize the execution flow. Click on **Monitor Message Processing** link as shown in the UI for the artifact "API Artifact userxx" and this should show all the executions of the API with the latest execution appearing right at the top.
 
 ![](/exercises/ex4/images/04_21_0010.png)
 
-21. Select the latest execution entry click on the Debug link as shown below
+21. Select the latest execution as shown below. We can that a Surge Protection limit exceeded for maximum number of calls.
 
 ![](/exercises/ex4/images/04_22_0010.png)
 
-22. We can see that the failure happened at the Surge protection policy and on clicking the "x" icon , we can see the actual error in the toast message
-
-<br>![](/exercises/ex4/images/04_23_0010.png)
-<br>![](/exercises/ex4/images/04_24_0010.png)
 
 ## Summary
 
 You've now completed the following:
 
-1. Able to model an API
+1. Modelled an API
 2. Deployed it on the Edge Integration Cell
-3. Execute the API and violate the surge protection policy successfully which prevents the backend from traffic surges
-4. Monitor the execution flow of the API 
+3. Executed the API and violate the surge protection policy successfully which prevents the backend from traffic surges
+4. Monitored the execution flow of the API 
