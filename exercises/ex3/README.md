@@ -64,15 +64,9 @@ Click the listed package and navigate to the Package details view.
 https://proxyavrdev.hana.ondemand.com/Proxy/jenkslave55.cpi.c.eu-de-1.cloud.sap/9912/sap/bc/srt/scs_ext/sap/salesorderbulkrequest_in
 ```
 
-<br> In the "Proxy Type" field choose 
-```yaml 
-Internet
-```
+<br> In the "Proxy Type" field choose **Internet** from the drop down menu.
 
-<br> and for "Authentication", choose 
-```yaml 
-None
-```
+<br> and for "Authentication", choose **None** from the drop down menu.
 
 After changing the values, click on "Save"
 
@@ -280,6 +274,7 @@ After changing the values, click on "Save"
 <br>![](/exercises/ex3/images/insomniasetbasicauth.png)
 
 31.	Add the following credentials
+
 <br>USERNAME =
 ```yaml
 sb-3009327f-3dc1-4e3e-9853-5bd7c23e221d!b44358|it-rt-cpisuite-europe-03!b18631
