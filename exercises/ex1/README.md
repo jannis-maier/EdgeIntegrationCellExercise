@@ -14,4 +14,8 @@ For running through the exercise steps, you will need access to an SAP Integrati
 
 You now have access to an SAP Integration Suite tenant and can start with the actual exercises.
 
-Continue to - [Exercise 2 - Discover, design and run pre-built standard integration on Edge Integration Cell](../ex3/README.md)
+If you are already familiar with the SAP Integration Suite capabilities, you may skip Exercise 2, and directly proceed to Exercise 3.
+
+Either continue to - [Exercise 2 - Explore SAP Integration Suite (optional)](../ex2/README.md)
+
+Or continue to - [Exercise 3 - Discover, design and run pre-built standard integration on Edge Integration Cell](../ex3/README.md)
