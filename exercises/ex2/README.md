@@ -1,5 +1,5 @@
 
-# Exercise 2 - Explore SAP Integration Suite (optional)
+# Exercise 1 - Explore SAP Integration Suite (optional)
 
 In this exercise, you will get introduced to different capabilities and explore navigation across different aspects of SAP Interation Suite tooling. This exercise is optional, if you are already familiar with the SAP Integration Suite capabilities, you can skip this chapter and proceed to the next exercise.  
 
@@ -78,4 +78,4 @@ Under **Settings - Runtime**, you will be able to activate or deactivate "Edge I
 
 You now have explored the tooling and different navigation aspects.
 
-Continue to - [Exercise 3 - Discover, design and run pre-built standard integration on Edge Integration Cell](../ex3/README.md)
+Continue to - [Exercise 2 - Discover, design and run pre-built standard integration on Edge Integration Cell](../ex3/README.md)
