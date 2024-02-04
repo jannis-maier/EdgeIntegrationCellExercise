@@ -23,7 +23,7 @@ If you like to find out more about how to install and setup an Edge Integration 
 For running through the exercises, you need access to an SAP Integration Suite tenant with an Edge Integration Cell runtime connected to.
 
 - Please use this [**SAP Integration Suite tenant**](https://cpisuite-europe-03.integrationsuite.cfapps.eu20-001.hana.ondemand.com/shell/home) for your exercises.
-- Use the user **userXX** with **XX** your ID provided by the instructors and the **password** shared by the instructors to login to the tenant.
+- Use the user **userXX** with **XX** your ID provided by the instructors and the password **Welcome1** to login to the tenant.
 
 ## Exercises
 
