@@ -27,12 +27,11 @@ For running through the exercises, you need access to an SAP Integration Suite t
 
 ## Exercises
 
-In the following, the complete list of exercise steps are listed. Run through them in the given order. You can use this section as an index or table of contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents. If you are familiar with the architecture of SAP Integration Suite with its new Edge Integration Cell runtime and the SAP Integration Suite capabilities, you may skip the Getting Started chapter as well as Exercise 2, hence they are labeled as optional.
+In the following, the complete list of exercise steps are listed. Run through them in the given order. You can use this section as an index or table of contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents. If you are familiar with the architecture of SAP Integration Suite with its new Edge Integration Cell runtime, you may skip the Getting Started chapter, hence it is labeled as optional.
 
 - [Getting Started - High level hybrid architecture (optional)](exercises/ex0/)
-- [Exercise 1 - Explore SAP Integration Suite (optional)](exercises/ex2/)
-- [Exercise 2 - Discover, design and run pre-built standard Integrations on Edge Integration Cell](exercises/ex3/)
-- [Exercise 3 - Design and manage an API on Edge Integration Cell](exercises/ex4/)
+- [Exercise 1 - Discover, design and run pre-built standard Integrations on Edge Integration Cell](exercises/ex3/)
+- [Exercise 2 - Design and manage an API on Edge Integration Cell](exercises/ex4/)
   
 
 ## Contributing
