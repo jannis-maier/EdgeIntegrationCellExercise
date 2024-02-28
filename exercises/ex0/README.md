@@ -35,4 +35,4 @@ Key Highlights:
 
 Now that you have an overview of SAP Integration Suite and Edge Integration Cell.
 
-Continue to - [Exercise 1 - Get access to an SAP Integration Suite tenant](../ex1/README.md)
+Continue to - [Exercise 1 - Discover, design and run pre-built standard Integrations on Edge Integration Cell](../ex3/README.md)
