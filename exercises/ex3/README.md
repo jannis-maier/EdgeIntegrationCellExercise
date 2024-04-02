@@ -131,6 +131,8 @@ After changing the values, click on "Save"
 ```json
 {
   "id": "dc3ea1c1-b4fb-4fa0-a83f-c6ae843b879c",
+  "orderId":"dabe136b-8efd-45de-a792-b73596af25f9",
+  "fulfillmentRequestId": "f876e666-ed01-4435-8ff2-8f3e8a276389",
   "version": 1,
   "orderNumber": 456789,
   "precedingDocument": null,
