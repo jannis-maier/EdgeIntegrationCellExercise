@@ -14,7 +14,7 @@ For all the subsequent steps in this exercise, please replace the xx in userxx w
 
 2. Create a package with the details as shown in the image below and click on Save. Replace xx with the id assigned to you.
 
-![](/exercises/ex4/images/04_02_0010.png)
+![](/exercises/ex4/images/00-02-SavePackage.png)
 
 3. Switch to the Artifacts tab and add an API.
 
