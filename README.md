@@ -8,15 +8,21 @@ Learn about Edge Integration cell, the next-generation hybrid integration runtim
 
 In this session, you will learn how to design integrations and APIs on SAP Integration Suite, and run and monitor them on Edge Integration Cell.
 
-## Pre-requisites
+## Pre-read
 
-There are no pre-requistes for this hands-on session. You can perform this even if you do not have any experience with integration solutions. However, you will be able to derive a lot of value from this session, if you have some knowledge on what SAP Integration Suite is all about and how it helps with enterprise-wide integration needs.
+You can perform those hands-on sessions even if you do not have any experience with integration solutions. However, you will be able to derive a lot of value from this session, if you have some knowledge on what SAP Integration Suite is all about and how it helps with enterprise-wide integration needs.
 
 Here is a mission that can help you getting started with SAP Integration Suite:
 - [Get Started with Integration Suite](https://discovery-center.cloud.sap/protected/index.html#/missiondetail/3258/3327/)
 
 If you like to find out more about how to install and setup an Edge Integration Cell, check out the help documentation:
 - [Setting Up and Managing Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/setting-up-and-managing-edge-integration-cell)
+
+## Pre-requisites
+
+As a prerequisite to run the integration scenarios, you need to prepare the provided API test tool.
+
+- [Prepare - Setup Bruno API client](exercises/prep/)
 
 ## Access to SAP Integration Suite tenant
 
