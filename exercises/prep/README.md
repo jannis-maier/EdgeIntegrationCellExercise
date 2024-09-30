@@ -44,7 +44,7 @@ As part of the collection, environment parameters have been maintained, that is 
 
 <br>![](/exercises/prep/images/bruno-open-save-mode.png)
 
-2. By default, no environemnt has been selected. From the drop down on the upper right corner, select the environment **eu03**.
+3. By default, no environemnt has been selected. From the drop down on the upper right corner, select the environment **eu03**.
 
 <br>![](/exercises/prep/images/bruno-environment-configure.png)
 
