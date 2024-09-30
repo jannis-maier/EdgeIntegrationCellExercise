@@ -4,111 +4,107 @@ In the previous exercise, you have familiarized yourself with the SAP Integratio
 
 ### Note
 
-For all the subsequent steps in this exercise, please replace the **XX** in **userXX** with your respective id e.g user99.
+For all the subsequent steps in this exercise, please replace the **XX** in **userXX** with your respective id e.g. user99.
 
 ##  Description
 
 After completing these steps, you will have deployed a standard integration on Edge Integration Cell and successfully executed it with the on-premise SAP S/4HANA system.
 
-1. Navigate back to Home. In the Home page navigate to Capabilities and click on "Discover Integrations" under Build Integration Scenarios tile.
+1. Navigate back to **Home**. In the Home page, navigate to **Capabilities** and click on **Discover Integrations** under **Build Integration Scenarios** tile.
 
-<br>![](/exercises/ex3/images/image.png)
+<br>![](/exercises/ex3/images/home-discover.png)
 
-2.  In the "Discover (Integrations)" view, navigate to the Search text box and enter the following package name, then click Enter:
+2.  In the **Discover (Integrations)** view, navigate to the Search text box and enter the following package name, then click Enter:
 
 ```yaml 
 SAP Order Management Foundation Integration with SAP S/4HANA
 ```
 
-3. From the list of results, click on the listed package "SAP Order Management Foundation Integration with SAP S/4HANA".
+3. From the list of results, click on the listed package **SAP Order Management Foundation Integration with SAP S/4HANA**.
 
-<br>![](/exercises/ex3/images/package%20search.png)
+<br>![](/exercises/ex3/images/package-search.png)
 
-4.  In the package detail view, click on Copy button placed at top-right corner of the detail view.
+4.  In the package detail view, click on **Copy** button placed at top-right corner of the detail view.
 
-<br>![](/exercises/ex3/images/4.png)
+<br>![](/exercises/ex3/images/package-copy.png)
 
-5.  In the Messages pop-up, click on "Create copy" to create a named copy.
+5.  In the **Messages** pop-up, click on **Create copy** to create a named copy.
 
-<br>![](/exercises/ex3/images/5.png)
+<br>![](/exercises/ex3/images/package-create-copy.png)
 
-6.  In the Provide suffix pop-up, enter the username that was provided to you. Clear the existing text which is shown as timestamp and enter username **userXX** with **XX** the number assigned to you, and Click OK.
+6.  In the **Provide suffix** pop-up, enter the username that was provided to you. Clear the existing text which is shown as timestamp and enter username **userXX** with **XX** the number assigned to you, then click **OK**.
 
-<br>![](/exercises/ex3/images/6.png)
+<br>![](/exercises/ex3/images/package-suffix.png)
 
-8.  Upon confirmation, a toast message "Package copied" will be shown. Click Close in the messages pop-up.
+8.  Upon confirmation, a toast message **Package copied** will be shown.
 
-<br>![](/exercises/ex3/images/7.png)
+<br>![](/exercises/ex3/images/package-copied.png)
 
-9.  Click Design from the sub navigation item in the left pane and click on "Integrations and APIs" and search the copied package (see the next step).
+9.  Expand **Design** from the navigation pane and click on **Integrations and APIs**.
 
-<br>![](/exercises/ex3/images/8.png)
+<br>![](/exercises/ex3/images/design-integration.png)
 
-10.  In the search box, type **userXX** which you used as suffix during package copy operation. Package name with suffix as ".userXX" be listed e.g. "SAP Order Management Foundation Integration with SAP S/4HANA.user130". 
+10.  In the search box, type **userXX** which you used as suffix during package copy operation. Package name with suffix as **.userXX** be listed e.g. **SAP Order Management Foundation Integration with SAP S/4HANA.userXX**. 
 Click the listed package and navigate to the Package details view.
 
-<br>![](/exercises/ex3/images/9.png)
+<br>![](/exercises/ex3/images/design-package-select.png)
 
-12.  Click on Artifacts tab and click the Configure entry from the Actions menu of the "Replicate Order from SAP Order Management Foundation to SAP S4HANA" integration flow.
+12.  In the package, click on **Artifacts** tab and click the **Configure** entry from the **Actions** menu of the **Replicate Order from SAP Order Management Foundation to SAP S4HANA** integration flow.
 
-<br>![](/exercises/ex3/images/10a.png)
+<br>![](/exercises/ex3/images/design-iflow-configure.png)
 
-13.  In the "Configure Selected Artifacts" dialog, change the following parameter under Sender tab under Connection section. Suffix the Address with the **userXX** assigned to you: **/s4onpremise/order_userXX**.
+13.  In the **Configure Selected Artifacts** dialog, change the following parameter under **Sender** tab under **Connection** section. Suffix the **Address** with the **userXX** assigned to you.
 
-<br>![](/exercises/ex3/images/changesenderaddress.png)
+```yaml 
+/s4onpremise/order_userXX
+```
 
-14.  Switch to the Receiver tab and change the following parameter values:
+<br>![](/exercises/ex3/images/design-iflow-configure-sender.png)
 
-<br>In the "Address" field, copy and paste: 
+14.  Switch to the **Receiver** tab and change the following parameter values:
+
+<br>In the **Address** field, copy and paste: 
 ```yaml 
 https://proxyavrdev.hana.ondemand.com/Proxy/jenkslave55.cpi.c.eu-de-1.cloud.sap/9912/sap/bc/srt/scs_ext/sap/salesorderbulkrequest_in
 ```
 
-<br> In the "Proxy Type" field choose **Internet** from the drop down menu,
+<br> In the **Proxy Type** field choose **Internet** from the drop down menu,
 
-and for "Authentication", choose **None** from the drop down menu.
+and for **Authentication**, choose **None** from the drop down menu.
 
-After changing the values, click on "Save"
+After changing the values, click on **Save**.
 
-<br>![](/exercises/ex3/images/changereceiveraddress.png)
+<br>![](/exercises/ex3/images/design-iflow-configure-receiver.png)
 
-15. Ignore the popup with the warnings, and click "Deploy".
+15. Ignore the popup with the warnings, and click **Deploy**.
 
-<br>![](/exercises/ex3/images/configureanddeploy.png)
+<br>![](/exercises/ex3/images/design-iflow-deploy.png)
 
-16.	In the upcoming dialog, select the Runtime Profile as "Edge Integration Cell" from the drop-down, since we want to deploy this integration flow to this runtime. And click Yes.
+16.	In the upcoming dialog, select the **Runtime Profile** as **Edge Integration Cell** from the drop-down, since we want to deploy this integration flow to this runtime. And click **Yes**.
 
-<br>![](/exercises/ex3/images/deployonedge.png)
+<br>![](/exercises/ex3/images/design-iflow-deploy-runtime.png)
 
-17.	Click Ok on the Deployment confirmation dialog. 
+17.	Click **Ok** on the Deployment confirmation dialog. 
 
-<br>![](/exercises/ex3/images/confirmdeployment.png)
+<br>![](/exercises/ex3/images/design-iflow-deploy-confirm.png)
 
 18.	Once the deployment is successful, a confirmation message will be shown.
 
-<br>![](/exercises/ex3/images/deployedsuccess.png)
+<br>![](/exercises/ex3/images/design-iflow-deployed.png)
 
-19.	Click on "Integrations and APIs" from the Monitor navigation item on the left pane. 
+19.	Click on the entry **Integrations and APIs** from the **Monitor** navigation item on the left pane. From the listed **Runtime**, select **Edge Integration Cell - ...** where the artifact was deployed to.
 
-<br>![](/exercises/ex3/images/navigatetomonitorview.png)
+<br>![](/exercises/ex3/images/monitor-runtime.png)
 
-20.	In the Overview page, from the listed Runtime, select "Edge Integration Cell - ..." where the artifact was deployed to.
+20.	For the selected Edge runtime, click on tile **All** under **Manage Integration Content**.
 
-<br>![](/exercises/ex3/images/chooseedgeinmonitoring.png)
+<br>![](/exercises/ex3/images/monitor-manage-content.png)
 
-21.	For the selected Edge runtime, click on tile "All" under "Manage Integration Content".
+21.	Verify that your integration flow is in **Started** state. Check the details like ID; it should be suffixed with your user - **userXX**. If there are too many log entries, you can filter based on your user. **Copy** the generated endpoint into the clipboard.
 
-<br>![](/exercises/ex3/images/tileselect.png)
+<br>![](/exercises/ex3/images/monitor-copy-endpoint.png)
 
-22.	Verify that your integration flow is in **Started** state. Check the details like ID; it should be suffixed with your user - **userXX**. If there are too many log entries, you can filter based on your user.
-
-<br>![](/exercises/ex3/images/iflowstarted.png)
-
-23.	Copy the generated endpoint.
-
-<br>![](/exercises/ex3/images/copyendpoint.png)
-
-24.	Open the Insomnia installed in your system.
+22.	As a prerequisite to test your integration scenario, you should have prepared the Bruno API client application. If you haven't done yet, first go through [Prepare - Setup Bruno API client](exercises/prep/) before proceeding. Otherwise, continue with the next step.
     
 25.	Use "Scratch Pad" option when prompted to login.
 
