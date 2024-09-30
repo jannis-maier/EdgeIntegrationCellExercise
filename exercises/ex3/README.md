@@ -108,7 +108,7 @@ After completing these steps, you will have run a standard integration on Edge I
 
 **Note**: You have two options to execute and test your integration scenario:
 - The quickest option is to use the Bruno API client application for which we have provided a collection with pre-configured sample request. As a prerequisite to test your integration scenario using the Bruno API client, you should have gone through [Prepare - Setup Bruno API client](exercises/prep/). If not, do the setup, then come back and proceed [from here](#option-1-using-bruno-api-client).
-- If you like to use your own tool, we have described in detail how to setup a sample request incl. body and authentication. This is described here.
+- If you like to use your own tool, we have described in detail how to setup a sample request incl. body and authentication. This is described [here](#option-2-using-your-own-api-client).
 
 ### Option 1: Using Bruno API client
 
@@ -128,7 +128,7 @@ After completing these steps, you will have run a standard integration on Edge I
 
 <br>![](/exercises/ex3/images/monitor-messages-tile.png)
 
-5.	Search the corresponding message processing log using the **message ID** copied beforehand by putting it in the ID search box and click enter. A completed message processing entry will be shown against the **Message ID** if message processing was successful.
+5.	Search the corresponding message processing log using the **message ID** from the clipboard by putting it in the ID search box and click enter. A completed message processing entry will be shown against the **Message ID** if message processing was successful.
 
 <br>![](/exercises/ex3/images/monitor-messages-completed.png)
 
@@ -293,7 +293,7 @@ e507568e-892c-443f-a6ba-4d53f76fecac$wS5Kq2nV25PlNT-U8bh8Yd-HGoBZpO-XW7Za9X3URE0
 ```
 
 4.	Trigger a message. Upon success, you will receive **200 OK** status as a response. Copy the **message ID** from the response **message** to the clipboard.
-5.	For monitoring the message in the message monitor of SAP Integration Suite, see above.
+5.	For monitoring the message in the message monitor of SAP Integration Suite, see steps 3 to 5 in [option 1](#option-1-using-bruno-api-client).
 
 ## Summary
 
