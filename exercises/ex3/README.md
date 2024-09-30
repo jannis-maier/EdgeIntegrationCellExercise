@@ -2,13 +2,11 @@
 
 In the previous exercise, you have familiarized yourself with the SAP Integration Suite capabilities and navigation. Now let's look at how we can discover, design and run pre-built standard integrations on Edge Integration Cell. In this exercise, we will use a pre-built standard content to connect to an SAP S/4HANA backend system, trigger execution of the content deployed on Edge Integration Cell and perform operations like update of the S/4HANA data objects.
 
-### Note
+**Note**: For all the subsequent steps in this exercise, please replace the **XX** in **userXX** with your respective id e.g. user99.
 
-For all the subsequent steps in this exercise, please replace the **XX** in **userXX** with your respective id e.g. user99.
+##  Configuration & Deployment
 
-##  Description
-
-After completing these steps, you will have deployed a standard integration on Edge Integration Cell and successfully executed it with the on-premise SAP S/4HANA system.
+After completing these steps, you will have configured and deployed a standard integration on Edge Integration Cell.
 
 1. Navigate back to **Home**. In the Home page, navigate to **Capabilities** and click on **Discover Integrations** under **Build Integration Scenarios** tile.
 
@@ -104,25 +102,43 @@ After changing the values, click on **Save**.
 
 <br>![](/exercises/ex3/images/monitor-copy-endpoint.png)
 
-22.	As a prerequisite to test your integration scenario, you should have prepared the Bruno API client application. If you haven't done yet, first go through [Prepare - Setup Bruno API client](exercises/prep/) before proceeding. Otherwise, continue with the next step.
-    
-25.	Use "Scratch Pad" option when prompted to login.
+## Testing
 
-<br>![](/exercises/ex3/images/insomniascratchpad.png)
+After completing these steps, you will have run a standard integration on Edge Integration Cell connecting to an on-premise SAP S/4HANA system.
 
-26. Create a new HTTP Request by clicking on '+' sign.
+**Note**: You have two options to execute and test your integration scenario:
+- The quickest option is to use the Bruno API client application for which we have provided a collection with pre-configured sample request. As a prerequisite to test your integration scenario using the Bruno API client, you should have gone through [Prepare - Setup Bruno API client](exercises/prep/). If not, do the setup, then come back and proceed [from here](#option-1-using-bruno-api-client).
+- If you like to use your own tool, we have described in detail how to setup a sample request incl. body and authentication. This is described here.
 
-<br>![](/exercises/ex3/images/insomnianewrequest.png)
+### Option 1: Using Bruno API client
 
-27. Change the Request method from 'GET' to 'POST' and paste the URL copied beforehand in the URL box.
+1. Open the Bruno application on your laptop, and select the POST request **Exercise 1 - Replicate Order**. Ensure that the **eu03** environment has been selected. Then trigger a message by selecting the **Send Request** button on the upper right.
 
-<br>![](/exercises/ex3/images/insomnianewpostrequest.png)
+<br>![](/exercises/ex3/images/bruno-send-request.png)
 
-28. Set the payload. In the 'Body' tab, select JSON to add the JSON payload.
+2.	Upon success, you will receive **200 OK** status as a response. Copy the **message ID** from the response message into the clipboard.
 
-<br>![](/exercises/ex3/images/insomniasetbody.png)
+<br>![](/exercises/ex3/images/bruno-send-successful.png)
 
-29. Add the following payload in the body text area.
+3. Switch back to the SAP Integration Suite UI, and navigate to the monitoring overview page.
+
+<br>![](/exercises/ex3/images/monitor-overview.png)
+
+4. Navigate to tile **All Artifacts** under **Monitor Message Processing**.
+
+<br>![](/exercises/ex3/images/monitor-messages-tile.png)
+
+5.	Search the corresponding message processing log using the **message ID** copied beforehand by putting it in the ID search box and click enter. A completed message processing entry will be shown against the **Message ID** if message processing was successful.
+
+<br>![](/exercises/ex3/images/monitor-messages-completed.png)
+
+Scroll down to proceed to the next exercise.
+
+### Option 2: Using your own API client
+
+1.	Open your own API client and create a new **POST** request.
+
+2. Define the payload of type JSON as follows.
 
 ```json
 {
@@ -265,39 +281,19 @@ After changing the values, click on **Save**.
   ]
 }
 ```
-<br>![](/exercises/ex3/images/insomniabodypayload.png)
+3. To authenticate to the Cloud Integration runtime, select **Basic Authentication** and maintain the credentials as follows.
 
-30. Navigate to 'Auth' tab and select 'Basic Auth'
-
-<br>![](/exercises/ex3/images/insomniasetbasicauth.png)
-
-31.	Add the following credentials
-
-<br>USERNAME =
+<br>User name =
 ```yaml
 sb-3009327f-3dc1-4e3e-9853-5bd7c23e221d!b44358|it-rt-cpisuite-europe-03!b18631
 ```
-<br>PASSWORD = 
+<br>Password = 
 ```yaml 
 e507568e-892c-443f-a6ba-4d53f76fecac$wS5Kq2nV25PlNT-U8bh8Yd-HGoBZpO-XW7Za9X3URE0=
 ```
-<br>![](/exercises/ex3/images/insomniabasicauthset.png)
 
-32.	Trigger the message by clicking on 'Send'. Upon success, you will receive '200 OK' status as a response. Copy the "message ID" from the response 'message'.
-
-<br>![](/exercises/ex3/images/insomniasuccessfulpost.png)
-
-33. Switch back to the Integration Suite UI, and navigate to the monitoring overview page.
-
-<br>![](/exercises/ex3/images/navigatebacktooverview.png)
-
-34. Navigate to tile "All Artifacts" under "Monitor Message Processing"
-
-<br>![](/exercises/ex3/images/mpltile.png)
-
-35.	Search the corresponding message processing log using the "message ID" copied in Step 32 by putting it in the ID search box and click enter. A completed message processing entry will be shown against the "Message ID", if message processing was successful.
-
-<br>![](/exercises/ex3/images/mplsuccess.png)
+4.	Trigger a message. Upon success, you will receive **200 OK** status as a response. Copy the **message ID** from the response **message** to the clipboard.
+5.	For monitoring the message in the message monitor of SAP Integration Suite, see above.
 
 ## Summary
 
