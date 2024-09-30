@@ -34,7 +34,7 @@ Import the provided collection if not already done.
 
 ## Select environment
 
-As part of the collection, environment parameters have been maintained, that is client id and client secret to be able to authenticate at the Cloud Integration tenant.
+As part of the collection, environment parameters have been maintained, that is **client id** and **client secret** to be able to authenticate at the Cloud Integration tenant.
 
 1. You should see two requests. In order to be able to select an environment, you need to open any request.
 
@@ -52,4 +52,4 @@ As part of the collection, environment parameters have been maintained, that is 
 
 You've now prepared the API test client.
 
-Navigate back to - [Main page](../README.md)
+Navigate back to - [Main page](/README.md)
