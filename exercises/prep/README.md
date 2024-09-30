@@ -15,7 +15,7 @@ See [Download Bruno's Desktop Application](https://docs.usebruno.com/get-started
 
 Import the provided collection if not already done.
 
-1. Download the collection **Edge Integration Cell Exercises.json** from [here](/exercises/prep/download/EdgeIntegrationCell-Exercises.json).
+1. Download the collection **EdgeIntegrationCell-Exercises.json** from [here](/exercises/prep/download/EdgeIntegrationCell-Exercises.json).
 2. Open Bruno and select **Import Collection** either from the menu or from the home screen.
 
 <br>![](/exercises/prep/images/bruno-import-collection.png)
