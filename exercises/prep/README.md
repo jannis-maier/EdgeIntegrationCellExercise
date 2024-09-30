@@ -18,7 +18,7 @@ Import the provided collection.
 1. Download the collection from here.
 2. Open Bruno and select **Import Collection** either from the menu or from the home screen.
 
-<br>![](/exercises/ex3/images/bruno_import_collection.png)
+<br>![](/exercises/ex3/images/bruno-import-collection.png)
 
 3. On the upcoming dialog, select the type **Bruno Collection**.
 4. Navigate to the location where you downloaded the collection to and select the same.
