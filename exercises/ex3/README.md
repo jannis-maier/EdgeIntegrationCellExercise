@@ -112,7 +112,7 @@ After completing these steps, you will have run a standard integration on Edge I
 
 ### Option 1: Using Bruno API client
 
-1. Open the Bruno application on your laptop, expand the **Edge Integration Cell Exercises** collection and select the POST request **Exercise 1 - Replicate Order**. Ensure that the **eu03** environment has been selected. Then trigger a message by selecting the **Send Request** button on the upper right.
+1. Open the Bruno application on your laptop, expand the **Edge Integration Cell Exercises** collection and select the POST request **Exercise 1 - Replicate Order**. Paste the copied end point from the clipboard into the URL field or simply replace the **XX** in the URL with the id provided to you. Ensure that the **eu03** environment has been selected. Then trigger a message by selecting the **Send Request** button on the upper right.
 
 <br>![](/exercises/ex3/images/bruno-send-request.png)
 
@@ -136,9 +136,11 @@ Scroll down to proceed to the next exercise.
 
 ### Option 2: Using your own API client
 
-1.	Open your own API client and create a new **POST** request.
+1. Open your own API client and create a new **POST** request.
 
-2. Define the payload of type JSON as follows.
+2. Paste the copied end point from the clipboard into the URL field.
+
+3. Define the payload of type JSON as follows.
 
 ```json
 {
@@ -281,7 +283,7 @@ Scroll down to proceed to the next exercise.
   ]
 }
 ```
-3. To authenticate to the Cloud Integration runtime, select **Basic Authentication** and maintain the credentials as follows.
+4. To authenticate to the Cloud Integration runtime, select **Basic Authentication** and maintain the credentials as follows.
 
 <br>User name =
 ```yaml
@@ -292,8 +294,8 @@ sb-3009327f-3dc1-4e3e-9853-5bd7c23e221d!b44358|it-rt-cpisuite-europe-03!b18631
 e507568e-892c-443f-a6ba-4d53f76fecac$wS5Kq2nV25PlNT-U8bh8Yd-HGoBZpO-XW7Za9X3URE0=
 ```
 
-4.	Trigger a message. Upon success, you will receive **200 OK** status as a response. Copy the **message ID** from the response **message** to the clipboard.
-5.	For monitoring the message in the message monitor of SAP Integration Suite, see steps 3 to 5 in [option 1](#option-1-using-bruno-api-client).
+5.	Trigger a message. Upon success, you will receive **200 OK** status as a response. Copy the **message ID** from the response **message** to the clipboard.
+6.	For monitoring the message in the message monitor of SAP Integration Suite, see steps 3 to 5 in [option 1](#option-1-using-bruno-api-client).
 
 ## Summary
 
