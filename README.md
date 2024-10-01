@@ -22,7 +22,7 @@ If you like to find out more about how to install and setup an Edge Integration 
 
 As a prerequisite to run the integration scenarios, you need to prepare the provided API test tool.
 
-- [Prepare - Setup Bruno API client](exercises/prep/)
+- [Setup Bruno API client](exercises/prep/)
 
 ## Access to SAP Integration Suite tenant
 
