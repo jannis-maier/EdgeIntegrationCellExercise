@@ -107,12 +107,12 @@ After changing the values, click on **Save**.
 After completing these steps, you will have run a standard integration on Edge Integration Cell connecting to an on-premise SAP S/4HANA system.
 
 **Note**: You have two options to execute and test your integration scenario:
-- The quickest option is to use the Bruno API client application for which we have provided a collection with pre-configured sample request. As a prerequisite to test your integration scenario using the Bruno API client, you should have gone through [Prepare - Setup Bruno API client](../prep/). If not, do the setup, then come back and proceed [from here](#option-1-using-bruno-api-client).
-- If you like to use your own tool, we have described in detail how to setup a sample request incl. body and authentication. This is described [here](#option-2-using-your-own-api-client).
+- The quickest option is to use the Bruno API client application for which we have provided a collection with pre-configured sample request. As a prerequisite to test your integration scenario using the Bruno API client, you should have gone through [Setup Bruno API client](../prep/). If not, do the setup, then come back and proceed with [option 1](#option-1-using-bruno-api-client).
+- If you like to use your own tool, we have described in detail how to setup a sample request incl. body and authentication. This is described in [option 2](#option-2-using-your-own-api-client).
 
 ### Option 1: Using Bruno API client
 
-1. Open the Bruno application on your laptop, and select the POST request **Exercise 1 - Replicate Order**. Ensure that the **eu03** environment has been selected. Then trigger a message by selecting the **Send Request** button on the upper right.
+1. Open the Bruno application on your laptop, expand the **Edge Integration Cell Exercises** collection and select the POST request **Exercise 1 - Replicate Order**. Ensure that the **eu03** environment has been selected. Then trigger a message by selecting the **Send Request** button on the upper right.
 
 <br>![](/exercises/ex3/images/bruno-send-request.png)
 
