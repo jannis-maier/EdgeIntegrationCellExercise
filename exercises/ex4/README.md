@@ -71,7 +71,7 @@ Runtime Profile (select from dropdown): **Edge Integration Cell**
 
 ![](/exercises/ex4/images/04_10_01_0010.png)
 
-13. Configure the step in accordance with the highlighted section shown in the UI and once done click on **Save**.
+13. Configure the step in accordance with the highlighted section shown in the UI.
 
 JSON Prefix Separator: **Colon(:)**
 
@@ -81,27 +81,35 @@ Suppress JSON Root Element flag: **selected**
 
 ![](/exercises/ex4/images/04_10_02_0010.png)
 
-14. Now we are ready to deploy the API on Edge. Click on "..." icon on the top right corner and from the dropdown select **Deploy**. During creation we had already configured the runtime profile and the hence this would deploy the API to the configured edge runtime profile.
+14. Next, we need to define the content type of the response. Click on the **XML to JSON Converter** step and when the pop-up opens, click on the **+ (plus)** icon to add a new flow step right after the **XML to JSON Converter** flow step. Select **Content Modifier** from the drop-down.
+
+![](/exercises/ex4/images/04_10_03_0010.png)
+
+14. Double click on the **Content Modifier** step and navigate to the **Message Header** tab at the bottom. Add a new header **content-type** of source type **Constant** and source value **application/json**. Once done click on **Save**.
+
+![](/exercises/ex4/images/04_10_04_0010.png)
+
+15. Now we are ready to deploy the API on Edge. Click on "..." icon on the top right corner and from the dropdown select **Deploy**. During creation we had already configured the runtime profile and the hence this would deploy the API to the configured edge runtime profile.
 
 ![](/exercises/ex4/images/04_11_0010.png)
 
-15. Post a successful deployment, the status field for the API should change from **Not deployed** to the **Deployed** state. In the UI, the highlighted section shows that the API is successfully deployed and is ready for execution.
+16. Post a successful deployment, the status field for the API should change from **Not deployed** to the **Deployed** state. In the UI, the highlighted section shows that the API is successfully deployed and is ready for execution.
 
 ![](/exercises/ex4/images/04_12_0010.png)
 
-16. Navigate out of the edit view by selecting **Cancel** from the dropdown as shown.
+17. Navigate out of the edit view by selecting **Cancel** from the dropdown as shown.
 
 ![](/exercises/ex4/images/04_13_0010.png)
 
-17. Now we would navigate to the monitoring shell navigation item on the left and select **Integrations and APIs**. Post the selection, we would select the edge runtime profile from the dropdown.
+18. Now we would navigate to the monitoring shell navigation item on the left and select **Integrations and APIs**. Post the selection, we would select the edge runtime profile from the dropdown.
 
 ![](/exercises/ex4/images/04_14_0010.png)
 
-18. Under the **Manage Integration Content** section, click on the highlighted tile to navigate to the list view of all the deployed artifacts.
+19. Under the **Manage Integration Content** section, click on the highlighted tile to navigate to the list view of all the deployed artifacts.
 
 ![](/exercises/ex4/images/04_15_0010.png)
 
-19. Select the artifact **API Artifact userXX** and you should see the endpoint which would be used to access the API. Click on the highlighted icon and copy the deployed url to the clipboard.
+20. Select the artifact **API Artifact userXX** and you should see the endpoint which would be used to access the API. Click on the highlighted icon and copy the deployed url to the clipboard.
 
 <br>![](/exercises/ex4/images/04_16_0010.png)
 
